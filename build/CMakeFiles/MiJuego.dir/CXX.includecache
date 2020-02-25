@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/juan/Escritorio/plantilla-sfml_v2/ej_modulos/mimodulo.h
+
+/home/juan/Escritorio/plantilla-sfml_v2/include/config.h
+
+/home/juan/Escritorio/plantilla-sfml_v2/main.cpp
+SFML/Graphics.hpp
+-
+iostream
+-
+include/config.h
+/home/juan/Escritorio/plantilla-sfml_v2/include/config.h
+ej_modulos/mimodulo.h
+/home/juan/Escritorio/plantilla-sfml_v2/ej_modulos/mimodulo.h
+
