@@ -2,6 +2,7 @@
 
 #include <SFML/Graphics.hpp>
 #include <iostream>
+#include "tinyxml2.h"
 
 //Generacion de un unico mapa
 //Drawable y transformable heredados de SFML
@@ -15,11 +16,15 @@ class Map : public sf::Drawable, public sf::Transformable{
     public:
         Map(); //Constructor
         virtual ~Map();
-        bool load(const std::string& path, sf::Vector2u tile_size, int*** level, unsigned int witdh, unsigned int heigth, int nLayer);
+        bool load(const std::string& path, sf::Vector2u tile_size, int*** level, unsigned int witdh, unsigned int heigth, int numLayer);
         void draw(sf::RenderTarget& target, sf::RenderStates states) const;
-        void mapMatrix();
+        void mapMatrix(); //Guardar datos del mapa
+        tinyxml2::XMLElement *data;
         int*** tilemap;
-        int** getIdMatrix;
-        //int 
-
+        int** gidMatrix;
+        int widthMap;
+        int heightMap;
+        int numLayers;
+        int widthTile;
+        int heightTile;
 };
