@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/jess/Escritorio/FV/map/build",
+  "command": "/usr/bin/g++-5    -I/home/jess/Escritorio/FV/map/ej_modulos   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/Map.dir/main3.cpp.o -c /home/jess/Escritorio/FV/map/main3.cpp",
+  "file": "/home/jess/Escritorio/FV/map/main3.cpp"
+},
+{
+  "directory": "/home/jess/Escritorio/FV/map/build",
+  "command": "/usr/bin/g++-5    -I/home/jess/Escritorio/FV/map/ej_modulos   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/mimodulo.cpp.o -c /home/jess/Escritorio/FV/map/ej_modulos/mimodulo.cpp",
+  "file": "/home/jess/Escritorio/FV/map/ej_modulos/mimodulo.cpp"
+},
+{
+  "directory": "/home/jess/Escritorio/FV/map/build",
+  "command": "/usr/bin/g++-5    -I/home/jess/Escritorio/FV/map/ej_modulos   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/mimodulo2.cpp.o -c /home/jess/Escritorio/FV/map/ej_modulos/mimodulo2.cpp",
+  "file": "/home/jess/Escritorio/FV/map/ej_modulos/mimodulo2.cpp"
+}
+]
