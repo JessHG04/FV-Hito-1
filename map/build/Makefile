@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jess/Escritorio/FV/map
+CMAKE_SOURCE_DIR = /home/jess/Escritorio/map
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jess/Escritorio/FV/map/build
+CMAKE_BINARY_DIR = /home/jess/Escritorio/map/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jess/Escritorio/FV/map/build/CMakeFiles /home/jess/Escritorio/FV/map/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jess/Escritorio/map/build/CMakeFiles /home/jess/Escritorio/map/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jess/Escritorio/FV/map/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jess/Escritorio/map/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -135,6 +135,33 @@ libModulos: cmake_check_build_system
 libModulos/fast:
 	$(MAKE) -f CMakeFiles/libModulos.dir/build.make CMakeFiles/libModulos.dir/build
 .PHONY : libModulos/fast
+
+ej_modulos/Map.o: ej_modulos/Map.cpp.o
+
+.PHONY : ej_modulos/Map.o
+
+# target to build an object file
+ej_modulos/Map.cpp.o:
+	$(MAKE) -f CMakeFiles/libModulos.dir/build.make CMakeFiles/libModulos.dir/ej_modulos/Map.cpp.o
+.PHONY : ej_modulos/Map.cpp.o
+
+ej_modulos/Map.i: ej_modulos/Map.cpp.i
+
+.PHONY : ej_modulos/Map.i
+
+# target to preprocess a source file
+ej_modulos/Map.cpp.i:
+	$(MAKE) -f CMakeFiles/libModulos.dir/build.make CMakeFiles/libModulos.dir/ej_modulos/Map.cpp.i
+.PHONY : ej_modulos/Map.cpp.i
+
+ej_modulos/Map.s: ej_modulos/Map.cpp.s
+
+.PHONY : ej_modulos/Map.s
+
+# target to generate assembly for a file
+ej_modulos/Map.cpp.s:
+	$(MAKE) -f CMakeFiles/libModulos.dir/build.make CMakeFiles/libModulos.dir/ej_modulos/Map.cpp.s
+.PHONY : ej_modulos/Map.cpp.s
 
 ej_modulos/mimodulo.o: ej_modulos/mimodulo.cpp.o
 
@@ -190,32 +217,59 @@ ej_modulos/mimodulo2.cpp.s:
 	$(MAKE) -f CMakeFiles/libModulos.dir/build.make CMakeFiles/libModulos.dir/ej_modulos/mimodulo2.cpp.s
 .PHONY : ej_modulos/mimodulo2.cpp.s
 
-main3.o: main3.cpp.o
+ej_modulos/tinyxml2.o: ej_modulos/tinyxml2.cpp.o
 
-.PHONY : main3.o
+.PHONY : ej_modulos/tinyxml2.o
 
 # target to build an object file
-main3.cpp.o:
-	$(MAKE) -f CMakeFiles/Map.dir/build.make CMakeFiles/Map.dir/main3.cpp.o
-.PHONY : main3.cpp.o
+ej_modulos/tinyxml2.cpp.o:
+	$(MAKE) -f CMakeFiles/libModulos.dir/build.make CMakeFiles/libModulos.dir/ej_modulos/tinyxml2.cpp.o
+.PHONY : ej_modulos/tinyxml2.cpp.o
 
-main3.i: main3.cpp.i
+ej_modulos/tinyxml2.i: ej_modulos/tinyxml2.cpp.i
 
-.PHONY : main3.i
+.PHONY : ej_modulos/tinyxml2.i
 
 # target to preprocess a source file
-main3.cpp.i:
-	$(MAKE) -f CMakeFiles/Map.dir/build.make CMakeFiles/Map.dir/main3.cpp.i
-.PHONY : main3.cpp.i
+ej_modulos/tinyxml2.cpp.i:
+	$(MAKE) -f CMakeFiles/libModulos.dir/build.make CMakeFiles/libModulos.dir/ej_modulos/tinyxml2.cpp.i
+.PHONY : ej_modulos/tinyxml2.cpp.i
 
-main3.s: main3.cpp.s
+ej_modulos/tinyxml2.s: ej_modulos/tinyxml2.cpp.s
 
-.PHONY : main3.s
+.PHONY : ej_modulos/tinyxml2.s
 
 # target to generate assembly for a file
-main3.cpp.s:
-	$(MAKE) -f CMakeFiles/Map.dir/build.make CMakeFiles/Map.dir/main3.cpp.s
-.PHONY : main3.cpp.s
+ej_modulos/tinyxml2.cpp.s:
+	$(MAKE) -f CMakeFiles/libModulos.dir/build.make CMakeFiles/libModulos.dir/ej_modulos/tinyxml2.cpp.s
+.PHONY : ej_modulos/tinyxml2.cpp.s
+
+main.o: main.cpp.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/Map.dir/build.make CMakeFiles/Map.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/Map.dir/build.make CMakeFiles/Map.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/Map.dir/build.make CMakeFiles/Map.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -227,15 +281,21 @@ help:
 	@echo "... Map"
 	@echo "... edit_cache"
 	@echo "... libModulos"
+	@echo "... ej_modulos/Map.o"
+	@echo "... ej_modulos/Map.i"
+	@echo "... ej_modulos/Map.s"
 	@echo "... ej_modulos/mimodulo.o"
 	@echo "... ej_modulos/mimodulo.i"
 	@echo "... ej_modulos/mimodulo.s"
 	@echo "... ej_modulos/mimodulo2.o"
 	@echo "... ej_modulos/mimodulo2.i"
 	@echo "... ej_modulos/mimodulo2.s"
-	@echo "... main3.o"
-	@echo "... main3.i"
-	@echo "... main3.s"
+	@echo "... ej_modulos/tinyxml2.o"
+	@echo "... ej_modulos/tinyxml2.i"
+	@echo "... ej_modulos/tinyxml2.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

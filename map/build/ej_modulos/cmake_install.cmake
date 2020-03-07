@@ -1,4 +1,4 @@
-# Install script for directory: /home/jess/Escritorio/FV/map/ej_modulos
+# Install script for directory: /home/jess/Escritorio/map/ej_modulos
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

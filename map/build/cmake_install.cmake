@@ -1,4 +1,4 @@
-# Install script for directory: /home/jess/Escritorio/FV/map
+# Install script for directory: /home/jess/Escritorio/map
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/jess/Escritorio/FV/map/build/ej_modulos/cmake_install.cmake")
+  include("/home/jess/Escritorio/map/build/ej_modulos/cmake_install.cmake")
 
 endif()
 
@@ -46,5 +46,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/jess/Escritorio/FV/map/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/jess/Escritorio/map/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
