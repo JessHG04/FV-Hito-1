@@ -14,8 +14,6 @@ int main(){
     mapa->mapMatrix(); //Se guarda los datos del mapa
     mapa->load("resources/environment/tileset.png", sf::Vector2u(16,16), mapa->tilemap, mapa->widthMap, mapa->heightMap, mapa->numLayers);
     std::cout << "Voy para el bucle del juego" << std::endl;
-    
-    //Falta inicializar el mapa
 
     //GameLoop
     while(window.isOpen()){
@@ -46,6 +44,9 @@ int main(){
                 }
             }
         }
+        window.clear();
         window.draw(*mapa);
+        window.display();
     }
+    return 0;
 }

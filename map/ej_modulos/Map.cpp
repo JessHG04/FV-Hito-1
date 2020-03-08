@@ -84,7 +84,7 @@ bool Map::load(const std::string& path, sf::Vector2u tileSize, int*** level, uns
            return false;
        }
        vertex.setPrimitiveType(sf::Quads);
-       vertex.resize(widthMap * heightMap * 294); //Se multiplica por la cantidad de tiles que hay, so, REVISAR
+       vertex.resize(widthMap * heightMap * 4); //Se multiplica por 4 bc el tiled es de 16x16
 
        for(unsigned int z = 0; z < numLayers; z++){
            for(unsigned int x = 0; x < widthMap; x++){
@@ -101,7 +101,7 @@ bool Map::load(const std::string& path, sf::Vector2u tileSize, int*** level, uns
                        u = gid % (tile.getSize().x / tileSize.x); 
                        v = gid / (tile.getSize().x / tileSize.x);
                        //Puntero para apuntar al quad actual
-                       sf::Vertex *quad = &vertex[(x+y*widthMap)*294]; //Jess revisa este numero tambien
+                       sf::Vertex *quad = &vertex[(x+y*widthMap)* 4]; 
 
                        //Definicion de posiciones del quad
                        quad[0].position = sf::Vector2f(x * tileSize.x, y * tileSize.y);
