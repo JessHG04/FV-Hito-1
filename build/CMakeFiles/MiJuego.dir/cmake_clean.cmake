@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/MiJuego.dir/main.cpp.o"
+  "CMakeFiles/MiJuego.dir/colisionBasica.cpp.o"
   "MiJuego.pdb"
   "MiJuego"
 )

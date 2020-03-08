@@ -1,125 +1,187 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
+#include <vector>
 
-#include "include/config.h"
-#include "ej_modulos/mimodulo.h"
 
-#define kVel 3
+using namespace std;
 
-int main() {
+int main(){
 
-  MiModulo *mod = new MiModulo();
-  int cambiasprite = 0;
-  //Creamos una ventana
-  sf::RenderWindow window(sf::VideoMode(640, 480), "Gremory Hole");
+	//tamanyo de la ventana y tamanyo del bloque
+	sf::RenderWindow app(sf::VideoMode(500,500,50),"Colisiones con mapa");
+	//velocidad del movimiento del bloque
+	app.setFramerateLimit(150);
+	//posicion  donde empieza el bloque principal
+	int px = 15, py = 350;
 
-  //Cargo la imagen donde reside la textura del sprite
-  sf::Texture tex;
-  sf::Texture tex2;
+	sf::Vector2f previous;
+	bool der = false,izq = false,up = false,down = false;
+	//dimensiones bloque principal
+	int offsetX = 50, offsetY = 50;
 
-  if (!tex.loadFromFile("resources/Sprites/Guerrera/mercedes.png")) {
-    std::cerr << "Error cargando la imagen sprites.png";
-    exit(0);
+	//atribucion de posicion bloque prinicipal
+	sf::RectangleShape RS(sf::Vector2f(offsetX, offsetY));
+
+	//color del bloque principal
+	RS.setFillColor(sf::Color(51,159,255));
+
+	//dibujamos el map de 10x10
+	int tabmap[10][10]={
+		{0,0,0,0,0,0,0,0,0,0},
+		{0,0,0,0,0,0,0,0,0,0},
+		{0,0,0,0,0,0,2,2,2,2},
+		{0,1,1,0,0,0,2,2,2,2},
+		{0,0,0,0,0,0,2,2,2,2},
+		{0,0,0,0,0,0,0,0,0,0},
+		{0,0,0,0,0,0,0,0,0,0},
+		{0,0,0,0,0,0,0,0,0,0},
+		{0,0,0,1,0,0,1,0,0,0},
+		{1,1,1,1,2,2,1,1,1,1}
+	};
+
+	//creamos vector
+	vector<sf::RectangleShape>vecBox;
+
+	//creamos vector trampa
+	vector<sf::RectangleShape>vecBoxTrampa;
+
+	//dimensiones de bloques del vector
+	sf::RectangleShape box(sf::Vector2f(offsetX, offsetY));
+
+	//recorremos el mapa para dibujarlo
+	for(int y = 0; y < 10; y++){
+		for(int x = 0; x < 10; x++){
+			if(tabmap[y][x]==1){
+				sf::RectangleShape box(sf::Vector2f(offsetX, offsetY));
+				//color bloques del vector
+				box.setFillColor(sf::Color(49,164,67));
+				//colocacion bloques del vector
+				box.setPosition(sf::Vector2f(x*offsetX, y*offsetY));
+				//anyamos bloques con 1 al vector
+				vecBox.push_back(box);
+			}
+
+			if(tabmap[y][x]==2){
+				sf::RectangleShape box(sf::Vector2f(offsetX, offsetY));
+				//color bloques del vector
+				box.setFillColor(sf::Color(212,46,40));
+				//colocacion bloques del vector
+				box.setPosition(sf::Vector2f(x*offsetX, y*offsetY));
+				//anyamos bloques con 1 al vector
+				vecBoxTrampa.push_back(box);
+			}
+		}
+	}
+
+	//inicia
+	while(app.isOpen())
+	{
+		//procesa eventos
+		sf::Event event;
+		while(app.pollEvent(event))
+		{
+			switch(event.type)
+			{
+			//cierra la ventana
+			case sf::Event::Closed:
+				app.close();
+				break;
+			}	
+		}
+
+		previous.x = px;
+		previous.y = py;
+
+		//movimientos del bloque principal
+		if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up)){
+			py--;
+			der = false;izq = false;up = true;down = false;
+			for(int i = 0; i < vecBox.size(); i++){
+				if(vecBox[i].getGlobalBounds().intersects(RS.getGlobalBounds())){
+					px = (previous.x);
+					py = (previous.y)+1;
+				}
+			}
+		}
+		if(sf::Keyboard::isKeyPressed(sf::Keyboard::Down)){
+			py++;
+			der = false;izq = false;up = false;down = true;
+			for(int i = 0; i < vecBox.size(); i++){
+				if(vecBox[i].getGlobalBounds().intersects(RS.getGlobalBounds())){
+					px = (previous.x);
+					py = (previous.y)-1;
+				}
+			}
+		}
+			
+		if(sf::Keyboard::isKeyPressed(sf::Keyboard::Left)){
+			px--;
+			der = false;izq = true;up = false;down = false;
+			for(int i = 0; i < vecBox.size(); i++){
+				if(vecBox[i].getGlobalBounds().intersects(RS.getGlobalBounds())){
+					px = (previous.x)+1;
+					py = (previous.y);
+				}
+			}
+		}
+			
+		if(sf::Keyboard::isKeyPressed(sf::Keyboard::Right)){
+			px++;
+			der = true;izq = false;up = false;down = false;
+			for(int i = 0; i < vecBox.size(); i++){
+				if(vecBox[i].getGlobalBounds().intersects(RS.getGlobalBounds())){
+					px = (previous.x)-1;
+					py = (previous.y);
+				}
+			}
+		}
+
+		//colision suelo bien
+		for(int i = 0; i < vecBox.size(); i++){
+			if(vecBox[i].getGlobalBounds().intersects(RS.getGlobalBounds()) && up==true ){
+				px = (previous.x);
+				py = (previous.y)+1;
+			}else if(vecBox[i].getGlobalBounds().intersects(RS.getGlobalBounds()) && der==true ){
+				px = (previous.x)-1;
+				py = (previous.y);
+			}else if(vecBox[i].getGlobalBounds().intersects(RS.getGlobalBounds()) && down==true ){
+				px = (previous.x);
+				py = (previous.y)-1;
+			}else if(vecBox[i].getGlobalBounds().intersects(RS.getGlobalBounds()) && izq==true ){
+				px = (previous.x)+1;
+				py = (previous.y);
+			}
+
+		}
+
+		//colision trampa
+		for(int i = 0; i < vecBoxTrampa.size(); i++){
+			if(vecBoxTrampa[i].getGlobalBounds().intersects(RS.getGlobalBounds())){
+				px = 15;
+				py = 350;
+			}
+		}
+
+
+		RS.setPosition(sf::Vector2f(px, py));
+
+		//limpia la pantalla, la rellena de color negro
+		app.clear();
+
+		//dibuja el vector
+		for(int i = 0; i < vecBox.size(); i++){
+			app.draw(vecBox[i]);
+		}
+
+		//dibuja el vector trampa
+		for(int i = 0; i < vecBoxTrampa.size(); i++){
+			app.draw(vecBoxTrampa[i]);
+		}
+
+		//dibuja el bloque principal
+		app.draw(RS);
+
+		//actualizacion de la ventana
+		app.display();
   }
-  if (!tex.loadFromFile("resources/Sprites/Guerrera/mercedesatk.png")) {
-    std::cerr << "Error cargando la imagen sprites.png";
-    exit(0);
-  }
-
-  //Y creo el spritesheet a partir de la imagen anterior
-  sf::Sprite sprite(tex);
-  sf::Sprite spriteatk(tex2);
-
-  //Le pongo el centroide donde corresponde
-  sprite.setOrigin(75 / 2, 75 / 2);
-  //Cojo el sprite que me interesa por defecto del sheet
-  sprite.setTextureRect(sf::IntRect(0 * 58, 0 * 58, 58, 58));
-
-  // Lo dispongo en la pantalla
-  sprite.setPosition(100, 400);
-  // Declaro el tiempo de movimiento del sprite
-  /*sf::Time tiempo = sf::seconds(0.2f);
-  sf::Vector2f velocidad;
-  float rapidez = 0.2f;*/
-
-  //Bucle del juego
-  while (window.isOpen()) {
-    //Bucle de obtención de eventos
-    sf::Event event;
-    while (window.pollEvent(event)) {
-
-      switch (event.type) {
-
-      //Si se recibe el evento de cerrar la ventana la cierro
-      case sf::Event::Closed:
-      window.close();
-        break;
-
-      //Se pulsó una tecla, imprimo su codigo
-      case sf::Event::KeyPressed:
-
-        //Verifico si se pulsa alguna tecla de movimiento
-        switch (event.key.code) {
-
-        //Mapeo del cursor
-        case sf::Keyboard::Right:
-        //sf::sleep (tiempo);
-          if(cambiasprite == 4){
-            cambiasprite = 0;
-          }
-          sprite.setTextureRect(sf::IntRect(cambiasprite * 58, 3 * 58, 58, 58));
-          //Escala por defecto
-          cambiasprite ++;
-          sprite.setScale(1, 1);
-          sprite.move(kVel,0);
-          break;
-
-        case sf::Keyboard::Left:
-        //sf::sleep (tiempo);
-          if(cambiasprite == 4){
-            cambiasprite = 0;
-          }
-          sprite.setTextureRect(sf::IntRect(cambiasprite * 58, 2 * 58, 58, 58));
-          
-          //Reflejo vertical
-          cambiasprite ++;
-          sprite.setScale(1, 1);
-          sprite.move(-kVel,0);
-          break;
-
-        case sf::Keyboard::Space:
-            spriteatk.setTextureRect(sf::IntRect( 0 * 99, 2 * 145, 99, 145));
-          break;
-
-
-
-        /*case sf::Keyboard::Up:
-          sprite.setTextureRect(sf::IntRect(0 * 75, 3 * 75, 75, 75));
-          sprite.move(0, -kVel);
-          break;
-
-        case sf::Keyboard::Down:
-          sprite.setTextureRect(sf::IntRect(0 * 75, 0 * 75, 75, 75));
-          sprite.move(0, kVel);
-          break;
-*/
-        //Tecla ESC para salir
-        case sf::Keyboard::Escape:
-          window.close();
-          break;
-
-        //Cualquier tecla desconocida se imprime por pantalla su código
-        default:
-          std::cout << event.key.code << std::endl;
-          break;
-        }
-      }
-    }
-
-    window.clear();
-    window.draw(sprite);
-    window.display();
-  }
-
-  return 0;
 }

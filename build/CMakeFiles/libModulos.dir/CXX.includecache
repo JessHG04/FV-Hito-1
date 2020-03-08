@@ -6,19 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/juan/Escritorio/plantilla-sfml_v2/ej_modulos/mimodulo.cpp
+/home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/mimodulo.cpp
 mimodulo.h
-/home/juan/Escritorio/plantilla-sfml_v2/ej_modulos/mimodulo.h
+/home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/mimodulo.h
 iostream
 -
 
-/home/juan/Escritorio/plantilla-sfml_v2/ej_modulos/mimodulo.h
+/home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/mimodulo.h
 
-/home/juan/Escritorio/plantilla-sfml_v2/ej_modulos/mimodulo2.cpp
+/home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/mimodulo2.cpp
 mimodulo2.h
-/home/juan/Escritorio/plantilla-sfml_v2/ej_modulos/mimodulo2.h
+/home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/mimodulo2.h
 iostream
 -
 
-/home/juan/Escritorio/plantilla-sfml_v2/ej_modulos/mimodulo2.h
+/home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/mimodulo2.h
 

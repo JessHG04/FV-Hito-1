@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/juan/Escritorio/plantilla-sfml_v2
+CMAKE_SOURCE_DIR = /home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/juan/Escritorio/plantilla-sfml_v2/build
+CMAKE_BINARY_DIR = /home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/MiJuego.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/MiJuego.dir/flags.make
 
 CMakeFiles/MiJuego.dir/main.cpp.o: CMakeFiles/MiJuego.dir/flags.make
 CMakeFiles/MiJuego.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/Escritorio/plantilla-sfml_v2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MiJuego.dir/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MiJuego.dir/main.cpp.o -c /home/juan/Escritorio/plantilla-sfml_v2/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MiJuego.dir/main.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MiJuego.dir/main.cpp.o -c /home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/main.cpp
 
 CMakeFiles/MiJuego.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MiJuego.dir/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/juan/Escritorio/plantilla-sfml_v2/main.cpp > CMakeFiles/MiJuego.dir/main.cpp.i
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/main.cpp > CMakeFiles/MiJuego.dir/main.cpp.i
 
 CMakeFiles/MiJuego.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MiJuego.dir/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/juan/Escritorio/plantilla-sfml_v2/main.cpp -o CMakeFiles/MiJuego.dir/main.cpp.s
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/main.cpp -o CMakeFiles/MiJuego.dir/main.cpp.s
 
 CMakeFiles/MiJuego.dir/main.cpp.o.requires:
 
@@ -81,14 +81,40 @@ CMakeFiles/MiJuego.dir/main.cpp.o.provides: CMakeFiles/MiJuego.dir/main.cpp.o.re
 CMakeFiles/MiJuego.dir/main.cpp.o.provides.build: CMakeFiles/MiJuego.dir/main.cpp.o
 
 
+CMakeFiles/MiJuego.dir/colisionBasica.cpp.o: CMakeFiles/MiJuego.dir/flags.make
+CMakeFiles/MiJuego.dir/colisionBasica.cpp.o: ../colisionBasica.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MiJuego.dir/colisionBasica.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MiJuego.dir/colisionBasica.cpp.o -c /home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/colisionBasica.cpp
+
+CMakeFiles/MiJuego.dir/colisionBasica.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MiJuego.dir/colisionBasica.cpp.i"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/colisionBasica.cpp > CMakeFiles/MiJuego.dir/colisionBasica.cpp.i
+
+CMakeFiles/MiJuego.dir/colisionBasica.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MiJuego.dir/colisionBasica.cpp.s"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/colisionBasica.cpp -o CMakeFiles/MiJuego.dir/colisionBasica.cpp.s
+
+CMakeFiles/MiJuego.dir/colisionBasica.cpp.o.requires:
+
+.PHONY : CMakeFiles/MiJuego.dir/colisionBasica.cpp.o.requires
+
+CMakeFiles/MiJuego.dir/colisionBasica.cpp.o.provides: CMakeFiles/MiJuego.dir/colisionBasica.cpp.o.requires
+	$(MAKE) -f CMakeFiles/MiJuego.dir/build.make CMakeFiles/MiJuego.dir/colisionBasica.cpp.o.provides.build
+.PHONY : CMakeFiles/MiJuego.dir/colisionBasica.cpp.o.provides
+
+CMakeFiles/MiJuego.dir/colisionBasica.cpp.o.provides.build: CMakeFiles/MiJuego.dir/colisionBasica.cpp.o
+
+
 # Object files for target MiJuego
 MiJuego_OBJECTS = \
-"CMakeFiles/MiJuego.dir/main.cpp.o"
+"CMakeFiles/MiJuego.dir/main.cpp.o" \
+"CMakeFiles/MiJuego.dir/colisionBasica.cpp.o"
 
 # External object files for target MiJuego
 MiJuego_EXTERNAL_OBJECTS =
 
 MiJuego: CMakeFiles/MiJuego.dir/main.cpp.o
+MiJuego: CMakeFiles/MiJuego.dir/colisionBasica.cpp.o
 MiJuego: CMakeFiles/MiJuego.dir/build.make
 MiJuego: liblibModulos.a
 MiJuego: /usr/lib/x86_64-linux-gnu/libsfml-system.so
@@ -97,7 +123,7 @@ MiJuego: /usr/lib/x86_64-linux-gnu/libsfml-graphics.so
 MiJuego: /usr/lib/x86_64-linux-gnu/libsfml-network.so
 MiJuego: /usr/lib/x86_64-linux-gnu/libsfml-audio.so
 MiJuego: CMakeFiles/MiJuego.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/juan/Escritorio/plantilla-sfml_v2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable MiJuego"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable MiJuego"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MiJuego.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -106,6 +132,7 @@ CMakeFiles/MiJuego.dir/build: MiJuego
 .PHONY : CMakeFiles/MiJuego.dir/build
 
 CMakeFiles/MiJuego.dir/requires: CMakeFiles/MiJuego.dir/main.cpp.o.requires
+CMakeFiles/MiJuego.dir/requires: CMakeFiles/MiJuego.dir/colisionBasica.cpp.o.requires
 
 .PHONY : CMakeFiles/MiJuego.dir/requires
 
@@ -114,6 +141,6 @@ CMakeFiles/MiJuego.dir/clean:
 .PHONY : CMakeFiles/MiJuego.dir/clean
 
 CMakeFiles/MiJuego.dir/depend:
-	cd /home/juan/Escritorio/plantilla-sfml_v2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/juan/Escritorio/plantilla-sfml_v2 /home/juan/Escritorio/plantilla-sfml_v2 /home/juan/Escritorio/plantilla-sfml_v2/build /home/juan/Escritorio/plantilla-sfml_v2/build /home/juan/Escritorio/plantilla-sfml_v2/build/CMakeFiles/MiJuego.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2 /home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2 /home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/build /home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/build /home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/build/CMakeFiles/MiJuego.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/MiJuego.dir/depend
 

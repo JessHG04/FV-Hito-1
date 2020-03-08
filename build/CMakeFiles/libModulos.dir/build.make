@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/juan/Escritorio/plantilla-sfml_v2
+CMAKE_SOURCE_DIR = /home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/juan/Escritorio/plantilla-sfml_v2/build
+CMAKE_BINARY_DIR = /home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/libModulos.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/libModulos.dir/flags.make
 
 CMakeFiles/libModulos.dir/ej_modulos/mimodulo.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/ej_modulos/mimodulo.cpp.o: ../ej_modulos/mimodulo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/Escritorio/plantilla-sfml_v2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/mimodulo.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/mimodulo.cpp.o -c /home/juan/Escritorio/plantilla-sfml_v2/ej_modulos/mimodulo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/mimodulo.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/mimodulo.cpp.o -c /home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/mimodulo.cpp
 
 CMakeFiles/libModulos.dir/ej_modulos/mimodulo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/ej_modulos/mimodulo.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/juan/Escritorio/plantilla-sfml_v2/ej_modulos/mimodulo.cpp > CMakeFiles/libModulos.dir/ej_modulos/mimodulo.cpp.i
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/mimodulo.cpp > CMakeFiles/libModulos.dir/ej_modulos/mimodulo.cpp.i
 
 CMakeFiles/libModulos.dir/ej_modulos/mimodulo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/ej_modulos/mimodulo.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/juan/Escritorio/plantilla-sfml_v2/ej_modulos/mimodulo.cpp -o CMakeFiles/libModulos.dir/ej_modulos/mimodulo.cpp.s
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/mimodulo.cpp -o CMakeFiles/libModulos.dir/ej_modulos/mimodulo.cpp.s
 
 CMakeFiles/libModulos.dir/ej_modulos/mimodulo.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/libModulos.dir/ej_modulos/mimodulo.cpp.o.provides.build: CMakeFiles/l
 
 CMakeFiles/libModulos.dir/ej_modulos/mimodulo2.cpp.o: CMakeFiles/libModulos.dir/flags.make
 CMakeFiles/libModulos.dir/ej_modulos/mimodulo2.cpp.o: ../ej_modulos/mimodulo2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/Escritorio/plantilla-sfml_v2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/mimodulo2.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/mimodulo2.cpp.o -c /home/juan/Escritorio/plantilla-sfml_v2/ej_modulos/mimodulo2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/libModulos.dir/ej_modulos/mimodulo2.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libModulos.dir/ej_modulos/mimodulo2.cpp.o -c /home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/mimodulo2.cpp
 
 CMakeFiles/libModulos.dir/ej_modulos/mimodulo2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libModulos.dir/ej_modulos/mimodulo2.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/juan/Escritorio/plantilla-sfml_v2/ej_modulos/mimodulo2.cpp > CMakeFiles/libModulos.dir/ej_modulos/mimodulo2.cpp.i
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/mimodulo2.cpp > CMakeFiles/libModulos.dir/ej_modulos/mimodulo2.cpp.i
 
 CMakeFiles/libModulos.dir/ej_modulos/mimodulo2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libModulos.dir/ej_modulos/mimodulo2.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/juan/Escritorio/plantilla-sfml_v2/ej_modulos/mimodulo2.cpp -o CMakeFiles/libModulos.dir/ej_modulos/mimodulo2.cpp.s
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/mimodulo2.cpp -o CMakeFiles/libModulos.dir/ej_modulos/mimodulo2.cpp.s
 
 CMakeFiles/libModulos.dir/ej_modulos/mimodulo2.cpp.o.requires:
 
@@ -117,7 +117,7 @@ liblibModulos.a: CMakeFiles/libModulos.dir/ej_modulos/mimodulo.cpp.o
 liblibModulos.a: CMakeFiles/libModulos.dir/ej_modulos/mimodulo2.cpp.o
 liblibModulos.a: CMakeFiles/libModulos.dir/build.make
 liblibModulos.a: CMakeFiles/libModulos.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/juan/Escritorio/plantilla-sfml_v2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library liblibModulos.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library liblibModulos.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/libModulos.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libModulos.dir/link.txt --verbose=$(VERBOSE)
 
@@ -136,6 +136,6 @@ CMakeFiles/libModulos.dir/clean:
 .PHONY : CMakeFiles/libModulos.dir/clean
 
 CMakeFiles/libModulos.dir/depend:
-	cd /home/juan/Escritorio/plantilla-sfml_v2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/juan/Escritorio/plantilla-sfml_v2 /home/juan/Escritorio/plantilla-sfml_v2 /home/juan/Escritorio/plantilla-sfml_v2/build /home/juan/Escritorio/plantilla-sfml_v2/build /home/juan/Escritorio/plantilla-sfml_v2/build/CMakeFiles/libModulos.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2 /home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2 /home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/build /home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/build /home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/build/CMakeFiles/libModulos.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/libModulos.dir/depend
 

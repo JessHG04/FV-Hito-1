@@ -1,6 +1,6 @@
-/home/juan/Escritorio/plantilla-sfml_v2/build/CMakeFiles/rebuild_cache.dir
-/home/juan/Escritorio/plantilla-sfml_v2/build/CMakeFiles/edit_cache.dir
-/home/juan/Escritorio/plantilla-sfml_v2/build/CMakeFiles/MiJuego.dir
-/home/juan/Escritorio/plantilla-sfml_v2/build/CMakeFiles/libModulos.dir
-/home/juan/Escritorio/plantilla-sfml_v2/build/ej_modulos/CMakeFiles/edit_cache.dir
-/home/juan/Escritorio/plantilla-sfml_v2/build/ej_modulos/CMakeFiles/rebuild_cache.dir
+/home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/build/CMakeFiles/rebuild_cache.dir
+/home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/build/CMakeFiles/edit_cache.dir
+/home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/build/CMakeFiles/MiJuego.dir
+/home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/build/CMakeFiles/libModulos.dir
+/home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/build/ej_modulos/CMakeFiles/edit_cache.dir
+/home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/build/ej_modulos/CMakeFiles/rebuild_cache.dir

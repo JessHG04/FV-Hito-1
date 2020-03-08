@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/juan/Escritorio/plantilla-sfml_v2/ej_modulos/mimodulo.cpp" "/home/juan/Escritorio/plantilla-sfml_v2/build/CMakeFiles/libModulos.dir/ej_modulos/mimodulo.cpp.o"
-  "/home/juan/Escritorio/plantilla-sfml_v2/ej_modulos/mimodulo2.cpp" "/home/juan/Escritorio/plantilla-sfml_v2/build/CMakeFiles/libModulos.dir/ej_modulos/mimodulo2.cpp.o"
+  "/home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/mimodulo.cpp" "/home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/build/CMakeFiles/libModulos.dir/ej_modulos/mimodulo.cpp.o"
+  "/home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/mimodulo2.cpp" "/home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/build/CMakeFiles/libModulos.dir/ej_modulos/mimodulo2.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/juan/Escritorio/plantilla-sfml_v2
+CMAKE_SOURCE_DIR = /home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/juan/Escritorio/plantilla-sfml_v2/build
+CMAKE_BINARY_DIR = /home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/juan/Escritorio/plantilla-sfml_v2/build/CMakeFiles /home/juan/Escritorio/plantilla-sfml_v2/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/build/CMakeFiles /home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/juan/Escritorio/plantilla-sfml_v2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sofia/Desktop/modulos/plantilla-modulos-sfml/plantilla-sfml_v2/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -135,6 +135,33 @@ libModulos: cmake_check_build_system
 libModulos/fast:
 	$(MAKE) -f CMakeFiles/libModulos.dir/build.make CMakeFiles/libModulos.dir/build
 .PHONY : libModulos/fast
+
+colisionBasica.o: colisionBasica.cpp.o
+
+.PHONY : colisionBasica.o
+
+# target to build an object file
+colisionBasica.cpp.o:
+	$(MAKE) -f CMakeFiles/MiJuego.dir/build.make CMakeFiles/MiJuego.dir/colisionBasica.cpp.o
+.PHONY : colisionBasica.cpp.o
+
+colisionBasica.i: colisionBasica.cpp.i
+
+.PHONY : colisionBasica.i
+
+# target to preprocess a source file
+colisionBasica.cpp.i:
+	$(MAKE) -f CMakeFiles/MiJuego.dir/build.make CMakeFiles/MiJuego.dir/colisionBasica.cpp.i
+.PHONY : colisionBasica.cpp.i
+
+colisionBasica.s: colisionBasica.cpp.s
+
+.PHONY : colisionBasica.s
+
+# target to generate assembly for a file
+colisionBasica.cpp.s:
+	$(MAKE) -f CMakeFiles/MiJuego.dir/build.make CMakeFiles/MiJuego.dir/colisionBasica.cpp.s
+.PHONY : colisionBasica.cpp.s
 
 ej_modulos/mimodulo.o: ej_modulos/mimodulo.cpp.o
 
@@ -227,6 +254,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... MiJuego"
 	@echo "... libModulos"
+	@echo "... colisionBasica.o"
+	@echo "... colisionBasica.i"
+	@echo "... colisionBasica.s"
 	@echo "... ej_modulos/mimodulo.o"
 	@echo "... ej_modulos/mimodulo.i"
 	@echo "... ej_modulos/mimodulo.s"
