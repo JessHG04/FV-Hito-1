@@ -24,3 +24,26 @@ void spritePersonaje::seleccionar_frame(){
     sf::IntRect rectangulo(frame_actual.x * tamFrame.x,frame_actual.y * tamFrame.y,tamFrame.x,tamFrame.y); //Construimos el rectangulo del tamaño del frame que queremos
     spr_player->setTextureRect(rectangulo); // le insertamos el recorte al sprite
 }
+
+void spritePersonaje::animar(){
+    if(frame_actual.x != (cantidadX-1)){ // si no alcance el ultimo frame
+            frame_actual.x += 1; //incremento un frame
+           
+        
+        
+       
+    }else{
+        frame_actual.x = 0;
+    }
+     seleccionar_frame(); //selecciono el rectangulo correspondiente al frame
+}
+
+void spritePersonaje::set_frameX(int frame){
+        frame_actual.x = frame;
+        seleccionar_frame();
+}
+
+void spritePersonaje::set_frameY(int frame){
+        frame_actual.y = frame;
+        seleccionar_frame();
+}

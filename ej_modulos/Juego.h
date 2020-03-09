@@ -8,6 +8,8 @@ class Juego{
         void dibujar(); //dibujar elementos
         void logica(); // procesa logicas del juego
         void procesar_eventos(); // elementos de entrada, teclado...
+        void cortarEventoDash(int distancia);
+
     private:
         bool gameover = false;
         //Creamos al jugador
@@ -16,4 +18,8 @@ class Juego{
         sf::Event *evento;
         // La ventana de nuestro juego
          sf::RenderWindow *ventana;
+         //Creamos el reloj
+         sf::Clock *reloj1;
+         sf::Time *crono1;
+         int fps;
 };

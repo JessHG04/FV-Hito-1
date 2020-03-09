@@ -4,14 +4,17 @@
 class spritePersonaje{
     public: 
         spritePersonaje();
-        ~spritePersonaje();
+        
         //Creo el sprite del jugador
         sf::Sprite *spr_player;
         //Textura para el sprite
         sf::Texture *txt_player;
         void set_sprite(int sprite, int cantidadX1, int cantidadY1 , sf::Vector2i frm_act);
         void seleccionar_frame(); //carga el frame actual(por si se cambia)
-        void set_frame(int frame); // modifica el frame actual
+        void set_frameX(int frame); // modifica el frame actual en fila
+        void set_frameY(int frame); // modifica el frame actual en columna
+        void animar(); //--------------------------------ANIMACION-----------------------------------------------
+
         // Sprite que va a usar
         int sprite_actual;
         int cantidadX;
