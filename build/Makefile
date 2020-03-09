@@ -136,6 +136,60 @@ libModulos/fast:
 	$(MAKE) -f CMakeFiles/libModulos.dir/build.make CMakeFiles/libModulos.dir/build
 .PHONY : libModulos/fast
 
+ej_modulos/Juego.o: ej_modulos/Juego.cpp.o
+
+.PHONY : ej_modulos/Juego.o
+
+# target to build an object file
+ej_modulos/Juego.cpp.o:
+	$(MAKE) -f CMakeFiles/libModulos.dir/build.make CMakeFiles/libModulos.dir/ej_modulos/Juego.cpp.o
+.PHONY : ej_modulos/Juego.cpp.o
+
+ej_modulos/Juego.i: ej_modulos/Juego.cpp.i
+
+.PHONY : ej_modulos/Juego.i
+
+# target to preprocess a source file
+ej_modulos/Juego.cpp.i:
+	$(MAKE) -f CMakeFiles/libModulos.dir/build.make CMakeFiles/libModulos.dir/ej_modulos/Juego.cpp.i
+.PHONY : ej_modulos/Juego.cpp.i
+
+ej_modulos/Juego.s: ej_modulos/Juego.cpp.s
+
+.PHONY : ej_modulos/Juego.s
+
+# target to generate assembly for a file
+ej_modulos/Juego.cpp.s:
+	$(MAKE) -f CMakeFiles/libModulos.dir/build.make CMakeFiles/libModulos.dir/ej_modulos/Juego.cpp.s
+.PHONY : ej_modulos/Juego.cpp.s
+
+ej_modulos/Jugador.o: ej_modulos/Jugador.cpp.o
+
+.PHONY : ej_modulos/Jugador.o
+
+# target to build an object file
+ej_modulos/Jugador.cpp.o:
+	$(MAKE) -f CMakeFiles/libModulos.dir/build.make CMakeFiles/libModulos.dir/ej_modulos/Jugador.cpp.o
+.PHONY : ej_modulos/Jugador.cpp.o
+
+ej_modulos/Jugador.i: ej_modulos/Jugador.cpp.i
+
+.PHONY : ej_modulos/Jugador.i
+
+# target to preprocess a source file
+ej_modulos/Jugador.cpp.i:
+	$(MAKE) -f CMakeFiles/libModulos.dir/build.make CMakeFiles/libModulos.dir/ej_modulos/Jugador.cpp.i
+.PHONY : ej_modulos/Jugador.cpp.i
+
+ej_modulos/Jugador.s: ej_modulos/Jugador.cpp.s
+
+.PHONY : ej_modulos/Jugador.s
+
+# target to generate assembly for a file
+ej_modulos/Jugador.cpp.s:
+	$(MAKE) -f CMakeFiles/libModulos.dir/build.make CMakeFiles/libModulos.dir/ej_modulos/Jugador.cpp.s
+.PHONY : ej_modulos/Jugador.cpp.s
+
 ej_modulos/mimodulo.o: ej_modulos/mimodulo.cpp.o
 
 .PHONY : ej_modulos/mimodulo.o
@@ -190,6 +244,33 @@ ej_modulos/mimodulo2.cpp.s:
 	$(MAKE) -f CMakeFiles/libModulos.dir/build.make CMakeFiles/libModulos.dir/ej_modulos/mimodulo2.cpp.s
 .PHONY : ej_modulos/mimodulo2.cpp.s
 
+ej_modulos/spritePersonaje.o: ej_modulos/spritePersonaje.cpp.o
+
+.PHONY : ej_modulos/spritePersonaje.o
+
+# target to build an object file
+ej_modulos/spritePersonaje.cpp.o:
+	$(MAKE) -f CMakeFiles/libModulos.dir/build.make CMakeFiles/libModulos.dir/ej_modulos/spritePersonaje.cpp.o
+.PHONY : ej_modulos/spritePersonaje.cpp.o
+
+ej_modulos/spritePersonaje.i: ej_modulos/spritePersonaje.cpp.i
+
+.PHONY : ej_modulos/spritePersonaje.i
+
+# target to preprocess a source file
+ej_modulos/spritePersonaje.cpp.i:
+	$(MAKE) -f CMakeFiles/libModulos.dir/build.make CMakeFiles/libModulos.dir/ej_modulos/spritePersonaje.cpp.i
+.PHONY : ej_modulos/spritePersonaje.cpp.i
+
+ej_modulos/spritePersonaje.s: ej_modulos/spritePersonaje.cpp.s
+
+.PHONY : ej_modulos/spritePersonaje.s
+
+# target to generate assembly for a file
+ej_modulos/spritePersonaje.cpp.s:
+	$(MAKE) -f CMakeFiles/libModulos.dir/build.make CMakeFiles/libModulos.dir/ej_modulos/spritePersonaje.cpp.s
+.PHONY : ej_modulos/spritePersonaje.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -227,12 +308,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... MiJuego"
 	@echo "... libModulos"
+	@echo "... ej_modulos/Juego.o"
+	@echo "... ej_modulos/Juego.i"
+	@echo "... ej_modulos/Juego.s"
+	@echo "... ej_modulos/Jugador.o"
+	@echo "... ej_modulos/Jugador.i"
+	@echo "... ej_modulos/Jugador.s"
 	@echo "... ej_modulos/mimodulo.o"
 	@echo "... ej_modulos/mimodulo.i"
 	@echo "... ej_modulos/mimodulo.s"
 	@echo "... ej_modulos/mimodulo2.o"
 	@echo "... ej_modulos/mimodulo2.i"
 	@echo "... ej_modulos/mimodulo2.s"
+	@echo "... ej_modulos/spritePersonaje.o"
+	@echo "... ej_modulos/spritePersonaje.i"
+	@echo "... ej_modulos/spritePersonaje.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

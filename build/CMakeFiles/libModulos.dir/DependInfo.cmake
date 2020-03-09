@@ -4,8 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/juan/Escritorio/plantilla-sfml_v2/ej_modulos/Juego.cpp" "/home/juan/Escritorio/plantilla-sfml_v2/build/CMakeFiles/libModulos.dir/ej_modulos/Juego.cpp.o"
+  "/home/juan/Escritorio/plantilla-sfml_v2/ej_modulos/Jugador.cpp" "/home/juan/Escritorio/plantilla-sfml_v2/build/CMakeFiles/libModulos.dir/ej_modulos/Jugador.cpp.o"
   "/home/juan/Escritorio/plantilla-sfml_v2/ej_modulos/mimodulo.cpp" "/home/juan/Escritorio/plantilla-sfml_v2/build/CMakeFiles/libModulos.dir/ej_modulos/mimodulo.cpp.o"
   "/home/juan/Escritorio/plantilla-sfml_v2/ej_modulos/mimodulo2.cpp" "/home/juan/Escritorio/plantilla-sfml_v2/build/CMakeFiles/libModulos.dir/ej_modulos/mimodulo2.cpp.o"
+  "/home/juan/Escritorio/plantilla-sfml_v2/ej_modulos/spritePersonaje.cpp" "/home/juan/Escritorio/plantilla-sfml_v2/build/CMakeFiles/libModulos.dir/ej_modulos/spritePersonaje.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

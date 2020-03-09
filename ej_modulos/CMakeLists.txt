@@ -2,6 +2,9 @@
 target_sources(libModulos PRIVATE
     "${CMAKE_CURRENT_SOURCE_DIR}/mimodulo.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/mimodulo2.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Juego.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Jugador.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/spritePersonaje.cpp"
 )
 
 #Y donde se encuentran los .h

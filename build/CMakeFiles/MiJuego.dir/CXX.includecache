@@ -6,7 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/home/juan/Escritorio/plantilla-sfml_v2/ej_modulos/mimodulo.h
+/home/juan/Escritorio/plantilla-sfml_v2/ej_modulos/Juego.h
+SFML/Graphics.hpp
+-
+Jugador.h
+/home/juan/Escritorio/plantilla-sfml_v2/ej_modulos/Jugador.h
+
+/home/juan/Escritorio/plantilla-sfml_v2/ej_modulos/Jugador.h
+SFML/Graphics.hpp
+-
+spritePersonaje.h
+/home/juan/Escritorio/plantilla-sfml_v2/ej_modulos/spritePersonaje.h
+iostream
+-
+string
+-
+
+/home/juan/Escritorio/plantilla-sfml_v2/ej_modulos/spritePersonaje.h
+SFML/Graphics.hpp
+-
 
 /home/juan/Escritorio/plantilla-sfml_v2/include/config.h
 
@@ -17,6 +35,8 @@ iostream
 -
 include/config.h
 /home/juan/Escritorio/plantilla-sfml_v2/include/config.h
-ej_modulos/mimodulo.h
-/home/juan/Escritorio/plantilla-sfml_v2/ej_modulos/mimodulo.h
+ej_modulos/Juego.h
+/home/juan/Escritorio/plantilla-sfml_v2/ej_modulos/Juego.h
+ej_modulos/Jugador.h
+/home/juan/Escritorio/plantilla-sfml_v2/ej_modulos/Jugador.h
 
