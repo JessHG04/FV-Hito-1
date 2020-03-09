@@ -6,17 +6,37 @@
 
 #IncludeRegexTransform: 
 
-/home/juan/Escritorio/plantilla-sfml_v2/ej_modulos/mimodulo.h
+/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/bala.h
+SFML/Graphics.hpp
+-
+iostream
+-
 
-/home/juan/Escritorio/plantilla-sfml_v2/include/config.h
+/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/cuadradoD.h
+SFML/Graphics.hpp
+-
+iostream
+-
 
-/home/juan/Escritorio/plantilla-sfml_v2/main.cpp
+/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/lara.h
+SFML/Graphics.hpp
+-
+iostream
+-
+
+/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/include/config.h
+
+/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/main.cpp
 SFML/Graphics.hpp
 -
 iostream
 -
 include/config.h
-/home/juan/Escritorio/plantilla-sfml_v2/include/config.h
-ej_modulos/mimodulo.h
-/home/juan/Escritorio/plantilla-sfml_v2/ej_modulos/mimodulo.h
+/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/include/config.h
+ej_modulos/lara.h
+/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/lara.h
+ej_modulos/bala.h
+/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/bala.h
+ej_modulos/cuadradoD.h
+/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/cuadradoD.h
 

@@ -4,8 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/juan/Escritorio/plantilla-sfml_v2/ej_modulos/mimodulo.cpp" "/home/juan/Escritorio/plantilla-sfml_v2/build/CMakeFiles/libModulos.dir/ej_modulos/mimodulo.cpp.o"
-  "/home/juan/Escritorio/plantilla-sfml_v2/ej_modulos/mimodulo2.cpp" "/home/juan/Escritorio/plantilla-sfml_v2/build/CMakeFiles/libModulos.dir/ej_modulos/mimodulo2.cpp.o"
+  "/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/bala.cpp" "/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/build/CMakeFiles/libModulos.dir/ej_modulos/bala.cpp.o"
+  "/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/cuadradoD.cpp" "/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/build/CMakeFiles/libModulos.dir/ej_modulos/cuadradoD.cpp.o"
+  "/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/lara.cpp" "/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/build/CMakeFiles/libModulos.dir/ej_modulos/lara.cpp.o"
+  "/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/mimodulo.cpp" "/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/build/CMakeFiles/libModulos.dir/ej_modulos/mimodulo.cpp.o"
+  "/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/mimodulo2.cpp" "/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/build/CMakeFiles/libModulos.dir/ej_modulos/mimodulo2.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

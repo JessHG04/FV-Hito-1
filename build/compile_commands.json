@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/build",
+  "command": "/usr/bin/g++-5    -I/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/MiJuego.dir/main.cpp.o -c /home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/main.cpp",
+  "file": "/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/main.cpp"
+},
+{
+  "directory": "/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/build",
+  "command": "/usr/bin/g++-5    -I/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/mimodulo.cpp.o -c /home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/mimodulo.cpp",
+  "file": "/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/mimodulo.cpp"
+},
+{
+  "directory": "/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/build",
+  "command": "/usr/bin/g++-5    -I/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/mimodulo2.cpp.o -c /home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/mimodulo2.cpp",
+  "file": "/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/mimodulo2.cpp"
+},
+{
+  "directory": "/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/build",
+  "command": "/usr/bin/g++-5    -I/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/lara.cpp.o -c /home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/lara.cpp",
+  "file": "/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/lara.cpp"
+},
+{
+  "directory": "/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/build",
+  "command": "/usr/bin/g++-5    -I/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/bala.cpp.o -c /home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/bala.cpp",
+  "file": "/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/bala.cpp"
+},
+{
+  "directory": "/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/build",
+  "command": "/usr/bin/g++-5    -I/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libModulos.dir/ej_modulos/cuadradoD.cpp.o -c /home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/cuadradoD.cpp",
+  "file": "/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/cuadradoD.cpp"
+}
+]

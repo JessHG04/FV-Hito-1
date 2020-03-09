@@ -1,6 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/libModulos.dir/ej_modulos/mimodulo.cpp.o"
   "CMakeFiles/libModulos.dir/ej_modulos/mimodulo2.cpp.o"
+  "CMakeFiles/libModulos.dir/ej_modulos/lara.cpp.o"
+  "CMakeFiles/libModulos.dir/ej_modulos/bala.cpp.o"
+  "CMakeFiles/libModulos.dir/ej_modulos/cuadradoD.cpp.o"
   "liblibModulos.pdb"
   "liblibModulos.a"
 )

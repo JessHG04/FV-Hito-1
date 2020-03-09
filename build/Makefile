@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/juan/Escritorio/plantilla-sfml_v2
+CMAKE_SOURCE_DIR = /home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/juan/Escritorio/plantilla-sfml_v2/build
+CMAKE_BINARY_DIR = /home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/juan/Escritorio/plantilla-sfml_v2/build/CMakeFiles /home/juan/Escritorio/plantilla-sfml_v2/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/build/CMakeFiles /home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/juan/Escritorio/plantilla-sfml_v2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -135,6 +135,87 @@ libModulos: cmake_check_build_system
 libModulos/fast:
 	$(MAKE) -f CMakeFiles/libModulos.dir/build.make CMakeFiles/libModulos.dir/build
 .PHONY : libModulos/fast
+
+ej_modulos/bala.o: ej_modulos/bala.cpp.o
+
+.PHONY : ej_modulos/bala.o
+
+# target to build an object file
+ej_modulos/bala.cpp.o:
+	$(MAKE) -f CMakeFiles/libModulos.dir/build.make CMakeFiles/libModulos.dir/ej_modulos/bala.cpp.o
+.PHONY : ej_modulos/bala.cpp.o
+
+ej_modulos/bala.i: ej_modulos/bala.cpp.i
+
+.PHONY : ej_modulos/bala.i
+
+# target to preprocess a source file
+ej_modulos/bala.cpp.i:
+	$(MAKE) -f CMakeFiles/libModulos.dir/build.make CMakeFiles/libModulos.dir/ej_modulos/bala.cpp.i
+.PHONY : ej_modulos/bala.cpp.i
+
+ej_modulos/bala.s: ej_modulos/bala.cpp.s
+
+.PHONY : ej_modulos/bala.s
+
+# target to generate assembly for a file
+ej_modulos/bala.cpp.s:
+	$(MAKE) -f CMakeFiles/libModulos.dir/build.make CMakeFiles/libModulos.dir/ej_modulos/bala.cpp.s
+.PHONY : ej_modulos/bala.cpp.s
+
+ej_modulos/cuadradoD.o: ej_modulos/cuadradoD.cpp.o
+
+.PHONY : ej_modulos/cuadradoD.o
+
+# target to build an object file
+ej_modulos/cuadradoD.cpp.o:
+	$(MAKE) -f CMakeFiles/libModulos.dir/build.make CMakeFiles/libModulos.dir/ej_modulos/cuadradoD.cpp.o
+.PHONY : ej_modulos/cuadradoD.cpp.o
+
+ej_modulos/cuadradoD.i: ej_modulos/cuadradoD.cpp.i
+
+.PHONY : ej_modulos/cuadradoD.i
+
+# target to preprocess a source file
+ej_modulos/cuadradoD.cpp.i:
+	$(MAKE) -f CMakeFiles/libModulos.dir/build.make CMakeFiles/libModulos.dir/ej_modulos/cuadradoD.cpp.i
+.PHONY : ej_modulos/cuadradoD.cpp.i
+
+ej_modulos/cuadradoD.s: ej_modulos/cuadradoD.cpp.s
+
+.PHONY : ej_modulos/cuadradoD.s
+
+# target to generate assembly for a file
+ej_modulos/cuadradoD.cpp.s:
+	$(MAKE) -f CMakeFiles/libModulos.dir/build.make CMakeFiles/libModulos.dir/ej_modulos/cuadradoD.cpp.s
+.PHONY : ej_modulos/cuadradoD.cpp.s
+
+ej_modulos/lara.o: ej_modulos/lara.cpp.o
+
+.PHONY : ej_modulos/lara.o
+
+# target to build an object file
+ej_modulos/lara.cpp.o:
+	$(MAKE) -f CMakeFiles/libModulos.dir/build.make CMakeFiles/libModulos.dir/ej_modulos/lara.cpp.o
+.PHONY : ej_modulos/lara.cpp.o
+
+ej_modulos/lara.i: ej_modulos/lara.cpp.i
+
+.PHONY : ej_modulos/lara.i
+
+# target to preprocess a source file
+ej_modulos/lara.cpp.i:
+	$(MAKE) -f CMakeFiles/libModulos.dir/build.make CMakeFiles/libModulos.dir/ej_modulos/lara.cpp.i
+.PHONY : ej_modulos/lara.cpp.i
+
+ej_modulos/lara.s: ej_modulos/lara.cpp.s
+
+.PHONY : ej_modulos/lara.s
+
+# target to generate assembly for a file
+ej_modulos/lara.cpp.s:
+	$(MAKE) -f CMakeFiles/libModulos.dir/build.make CMakeFiles/libModulos.dir/ej_modulos/lara.cpp.s
+.PHONY : ej_modulos/lara.cpp.s
 
 ej_modulos/mimodulo.o: ej_modulos/mimodulo.cpp.o
 
@@ -227,6 +308,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... MiJuego"
 	@echo "... libModulos"
+	@echo "... ej_modulos/bala.o"
+	@echo "... ej_modulos/bala.i"
+	@echo "... ej_modulos/bala.s"
+	@echo "... ej_modulos/cuadradoD.o"
+	@echo "... ej_modulos/cuadradoD.i"
+	@echo "... ej_modulos/cuadradoD.s"
+	@echo "... ej_modulos/lara.o"
+	@echo "... ej_modulos/lara.i"
+	@echo "... ej_modulos/lara.s"
 	@echo "... ej_modulos/mimodulo.o"
 	@echo "... ej_modulos/mimodulo.i"
 	@echo "... ej_modulos/mimodulo.s"

@@ -6,19 +6,61 @@
 
 #IncludeRegexTransform: 
 
-/home/juan/Escritorio/plantilla-sfml_v2/ej_modulos/mimodulo.cpp
+/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/bala.cpp
+SFML/Graphics.hpp
+-
+iostream
+-
+bala.h
+/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/bala.h
+
+/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/bala.h
+SFML/Graphics.hpp
+-
+iostream
+-
+
+/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/cuadradoD.cpp
+SFML/Graphics.hpp
+-
+iostream
+-
+cuadradoD.h
+/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/cuadradoD.h
+
+/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/cuadradoD.h
+SFML/Graphics.hpp
+-
+iostream
+-
+
+/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/lara.cpp
+SFML/Graphics.hpp
+-
+iostream
+-
+lara.h
+/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/lara.h
+
+/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/lara.h
+SFML/Graphics.hpp
+-
+iostream
+-
+
+/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/mimodulo.cpp
 mimodulo.h
-/home/juan/Escritorio/plantilla-sfml_v2/ej_modulos/mimodulo.h
+/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/mimodulo.h
 iostream
 -
 
-/home/juan/Escritorio/plantilla-sfml_v2/ej_modulos/mimodulo.h
+/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/mimodulo.h
 
-/home/juan/Escritorio/plantilla-sfml_v2/ej_modulos/mimodulo2.cpp
+/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/mimodulo2.cpp
 mimodulo2.h
-/home/juan/Escritorio/plantilla-sfml_v2/ej_modulos/mimodulo2.h
+/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/mimodulo2.h
 iostream
 -
 
-/home/juan/Escritorio/plantilla-sfml_v2/ej_modulos/mimodulo2.h
+/home/pascual/Escritorio/PRUEBA/LARA/plantilla-modulos-sfml/plantilla-sfml_v2/ej_modulos/mimodulo2.h
 
